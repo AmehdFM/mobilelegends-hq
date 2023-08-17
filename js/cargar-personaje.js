@@ -15,6 +15,7 @@ function cargarInfoPersonaje(nombre) {
         for (const personaje of datosJson) {
             if (personaje.name === nombre) {
                 personajeEncontrado = personaje;
+                console.log(personajeEncontrado)
                 break;
             }
         }
