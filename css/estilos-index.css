@@ -1,0 +1,27 @@
+/* Estilos para el título principal */
+main h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para las secciones */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.gallery a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+.gallery img {
+    width: 100px; /* Tamaño estándar de las imágenes */
+    height: auto;
+    border-radius: 8px;
+}

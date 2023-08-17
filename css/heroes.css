@@ -1,0 +1,73 @@
+/* Estilos para la página de héroes */
+main {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px; /* Espaciado superior para el título */
+}
+.texto-explicacion{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.subnav {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0; /* Espaciado vertical para la barra de navegación */
+    padding: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea superior discreta */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea inferior discreta */
+}
+
+.subnav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.subnav li {
+    margin: 0 10px; /* Espaciado entre elementos de la barra de navegación */
+}
+
+.subnav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.subnav a:hover {
+    color: #FFD700; 
+}
+.descripcion{
+    padding: 0px 200px;
+}
+
+/*--------------------Seccion de galeria-------------------*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 100px;
+}
+
+.personaje {
+    text-align: center;
+    width: 200px; /* Tamaño estándar para las imágenes */
+}
+
+.personaje img {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+    border: 2px solid #fff; /* Borde alrededor de las imágenes */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.nombre-personaje {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+}

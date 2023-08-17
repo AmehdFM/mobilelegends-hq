@@ -1,0 +1,41 @@
+/* Estilos para la barra de navegación */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333; /* Color oscuro de fondo */
+    border-top: 1px solid #666; /* Borde superior delgado */
+    margin-top: 0; /* Elimina el margen superior */
+    padding-top: 0; /* Elimina el relleno superior */
+}
+
+header nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white; /* Color del texto */
+    display: inline-block;
+    padding: 10px;
+    border-bottom: none; /* Elimina la línea inferior */
+}
+
+/* Cambia el color del enlace cuando se pasa el cursor sobre él */
+header nav ul li a:hover {
+    color: #ffa500; /* Cambia el color cuando se pasa el cursor */
+}
+
+
+
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: #222; /* Color oscuro de fondo */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white; /* Color del texto */
+}
