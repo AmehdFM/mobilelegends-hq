@@ -30,6 +30,7 @@ function cargarInfoPersonaje(nombre) {
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
 }
 
-
 // Cargar información del personaje al cargar la página
-cargarInfoPersonaje(nombrePersonaje);
+window.addEventListener('load', () => {
+    cargarInfoPersonaje(nombrePersonaje);
+});
