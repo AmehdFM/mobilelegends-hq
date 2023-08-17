@@ -11,18 +11,18 @@ function cargarInfoPersonaje(nombre) {
         const datosJson = data;
         
         // Encontrar el personaje en los datos del JSON
-        const personaje = datosJson.personajes.find(personaje => personaje.nombre === nombre);
+        const personaje = datosJson.find(p => p.name === nombre);
         
         // Actualizar elementos en la plantilla HTML con los datos del personaje
-        document.title = `${personaje.nombre} - Mobile Legends HQ`;
+        document.title = `${personaje.name} - Mobile Legends HQ`;
 
         const nombreElemento = document.querySelector('h2');
         const imagenElemento = document.querySelector('img');
         const descripcionElemento = document.querySelector('p');
 
-        nombreElemento.textContent = personaje.nombre;
-        imagenElemento.src = `../img/personajes/${personaje.imagen}`;
-        imagenElemento.alt = personaje.nombre;
+        nombreElemento.textContent = personaje.name;
+        imagenElemento.src = personaje.imgURL;
+        imagenElemento.alt = personaje.heroid;
         descripcionElemento.textContent = personaje.historia;
 
         // Puedes agregar más actualizaciones de elementos aquí según tus necesidades
