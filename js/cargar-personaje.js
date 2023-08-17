@@ -9,7 +9,7 @@ function cargarInfoPersonaje(nombre) {
       .then(response => response.json())
       .then(data => {
         const datosJson = data;
-        console.log(datisJson);
+        console.log(datosJson);
         // Encontrar el personaje en los datos del JSON
         const personaje = datosJson.find(p => p.name === nombre);
 
